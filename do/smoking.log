@@ -5691,3 +5691,62 @@ delimiter now cr
 . 
 end of do-file
 
+. do "/var/folders/st/xzrptnmx0lb7r93b976p0jc40000gn/T//SD00614.000000"
+
+. * Drop the outliers (RMSPE is 5 times more than Texas: drops 13, 22, 24, 29, 3
+> 4 and 39)
+. * Picture of the full sample, including outlier RSMPE
+. #delimit;       
+delimiter now ;
+. twoway 
+> (line gap1 year ,lp(solid)lw(vthin)) 
+> (line gap2 year ,lp(solid)lw(vthin)) 
+> (line gap3 year ,lp(solid)lw(vthin)) 
+> (line gap4 year ,lp(solid)lw(vthin)) 
+> (line gap5 year ,lp(solid)lw(vthin))
+> (line gap6 year ,lp(solid)lw(vthin)) 
+> (line gap7 year ,lp(solid)lw(vthin)) 
+> (line gap8 year ,lp(solid)lw(vthin)) 
+> (line gap9 year ,lp(solid)lw(vthin)) 
+> (line gap10 year ,lp(solid)lw(vthin)) 
+> (line gap11 year ,lp(solid)lw(vthin)) 
+> (line gap12 year ,lp(solid)lw(vthin)) 
+> (line gap14 year ,lp(solid)lw(vthin)) 
+> (line gap15 year ,lp(solid)lw(vthin)) 
+> (line gap16 year ,lp(solid)lw(vthin)) 
+> (line gap17 year ,lp(solid)lw(vthin))
+> (line gap18 year ,lp(solid)lw(vthin)) 
+> (line gap19 year ,lp(solid)lw(vthin)) 
+> (line gap20 year ,lp(solid)lw(vthin)) 
+> (line gap21 year ,lp(solid)lw(vthin)) 
+> (line gap23 year ,lp(solid)lw(vthin)) 
+> (line gap25 year ,lp(solid)lw(vthin)) 
+> (line gap26 year ,lp(solid)lw(vthin))
+> (line gap27 year ,lp(solid)lw(vthin))
+> (line gap28 year ,lp(solid)lw(vthin)) 
+> (line gap30 year ,lp(solid)lw(vthin)) 
+> (line gap31 year ,lp(solid)lw(vthin)) 
+> (line gap32 year ,lp(solid)lw(vthin)) 
+> (line gap33 year ,lp(solid)lw(vthin)) 
+> (line gap35 year ,lp(solid)lw(vthin))
+> (line gap36 year ,lp(solid)lw(vthin))
+> (line gap37 year ,lp(solid)lw(vthin)) 
+> (line gap38 year ,lp(solid)lw(vthin)) 
+> 
+> (line gap3 year ,lp(solid)lw(thick)lcolor(black)), /*treatment unit, Californi
+> a*/
+> yline(0, lpattern(shortdash) lcolor(black)) xline(1993, lpattern(shortdash) lc
+> olor(black))
+> xtitle("",si(small)) xlabel(#10) ytitle("Gap in cigsales per capita prediction
+>  error", size(small))
+>         legend(off);
+
+. #delimit cr
+delimiter now cr
+. 
+. graph save Graph ../figures/synth_placebo_bmprate2.gph, replace
+(file ../figures/synth_placebo_bmprate2.gph saved)
+
+. 
+end of do-file
+
