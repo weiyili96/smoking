@@ -1,9 +1,9 @@
 **************************************************************
-* name: texas_synth.do
+* name: smoking_synth.do
 * author: scott cunningham (baylor university)
 * description: estimates the causal effect of prison capacity
 * 			   expansion on incarceration rates using synth
-* date: april 19, 2020
+* date: may 28, 2020
 **************************************************************
 
 cd "/Users/weiyi/Desktop/BU/summer 2020/smoking/do"
@@ -55,6 +55,7 @@ save ../data/synth/synth_bmprate_39.dta, replace
 set more off;
 use ../data/smoking.dta, replace;
 
+tsset state year;
 local statelist  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39;
 
 foreach i of local statelist {;
@@ -71,6 +72,7 @@ synth 	cigsale
 
 
  foreach i of local statelist {;
+ 
  matrix rownames state`i'=`i';
  matlist state`i', names(rows);
  };
