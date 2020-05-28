@@ -4,15 +4,15 @@ StataFileTM:00001:01000:LiveGPH:                       :
 *! family: twoway
 *! command: twoway (line gap1 year ,lp(solid)lw(vthin))  (line gap2 year ,lp(solid)lw(vthin))  (line gap3 year ,lp(solid)lw(vthin))  (line gap4 year ,lp(solid)lw(vthin))  (line gap5 year ,lp(solid)lw(vthin)) (line gap6 year ,lp(solid)lw(vthin))  (line gap7 year ,lp(solid)lw(vthin))  (line gap8 year ,lp(solid)lw(vthin))  (line gap9 year ,lp(solid)lw(vthin))  (line gap10 year ,lp(solid)lw(vthin))  (line gap11 year ,lp(solid)lw(vthin))  (line gap12 year ,lp(solid)lw(vthin))  (line gap13 year ,lp(solid)lw(vthin))  (line gap14 year ,lp(solid)lw(vthin))  (line gap15 year ,lp(solid)lw(vthin))  (line gap16 year ,lp(solid)lw(vthin))  (line gap17 year ,lp(solid)lw(vthin)) (line gap18 year ,lp(solid)lw(vthin))  (line gap19 year ,lp(solid)lw(vthin))  (line gap20 year ,lp(solid)lw(vthin))  (line gap21 year ,lp(solid)lw(vthin))  (line gap22 year ,lp(solid)lw(vthin))  (line gap23 year ,lp(solid)lw(vthin))  (line gap24 year ,lp(solid)lw(vthin))  (line gap25 year ,lp(solid)lw(vthin))  (line gap26 year ,lp(solid)lw(vthin)) (line gap27 year ,lp(solid)lw(vthin)) (line gap28 year ,lp(solid)lw(vthin))  (line gap29 year ,lp(solid)lw(vthin))  (line gap30 year ,lp(solid)lw(vthin))  (line gap31 year ,lp(solid)lw(vthin))  (line gap32 year ,lp(solid)lw(vthin))  (line gap33 year ,lp(solid)lw(vthin))  (line gap34 year ,lp(solid)lw(vthin)) (line gap35 year ,lp(solid)lw(vthin)) (line gap36 year ,lp(solid)lw(vthin)) (line gap37 year ,lp(solid)lw(vthin))  (line gap38 year ,lp(solid)lw(vthin))  (line gap39 year ,lp(solid)lw(vthin))  (line gap3 year ,lp(solid)lw(thick)lcolor(black)),  yline(0, lpattern(shortdash) lcolor(black)) xline(1988, lpattern(shortdash) lcolor(black)) xtitle("",si(small)) xlabel(#10) ytitle("Gap in cigsales per capita prediction error", size(small))         legend(off)
 *! command_date: 28 May 2020
-*! command_time: 16:38:22
+*! command_time: 16:49:18
 *! datafile: ../data/synth/placebo_bmprate.dta
-*! datafile_date: 28 May 2020 16:38
+*! datafile_date: 28 May 2020 16:49
 *! scheme: s2color
 *! naturallywhite: 1
 *! xsize: 5.5
 *! ysize: 4
 *! end
-<BeginItem> serset K600002f629c0 
+<BeginItem> serset K600002f63000 
 <BeginSerset>
 <BeginSeries>
 .name = `"gap1"'
@@ -511,8 +511,8 @@ zÀ^¡WA·––ÀëQAV„ÀY¹µA·ğ?Ş’?!Á B9´À—C?@~É@u´¾bõ-ÀzİÃ?—\–?ÎÿAĞÌğÁ©á‡À†jÚÀZ
 <BeginItem> scheme K600002dd3940 
 .setscheme , scheme(s2color) naturallywhite(1)
 <EndItem>
-<BeginItem> twowaygraph_g K600002f2ce80 <UseScheme> K600002dd3940
-.sersets[1] = .__Map.K600002f629c0.ref
+<BeginItem> twowaygraph_g K600002f911c0 <UseScheme> K600002dd3940
+.sersets[1] = .__Map.K600002f63000.ref
 .insert (plotregion1 = .plotregion.new , style(scheme twoway) graph(`.objkey')) at 1 1
 .plotregion1.Declare plot1 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap1') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p1line) 
 .plotregion1.plot1.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
@@ -662,7 +662,7 @@ tempname glsty
 .insert (spacerr = .spacer.new) rightof plotregion1 , ring(11)
 .command = `"twoway (line gap1 year ,lp(solid)lw(vthin))  (line gap2 year ,lp(solid)lw(vthin))  (line gap3 year ,lp(solid)lw(vthin))  (line gap4 year ,lp(solid)lw(vthin))  (line gap5 year ,lp(solid)lw(vthin)) (line gap6 year ,lp(solid)lw(vthin))  (line gap7 year ,lp(solid)lw(vthin))  (line gap8 year ,lp(solid)lw(vthin))  (line gap9 year ,lp(solid)lw(vthin))  (line gap10 year ,lp(solid)lw(vthin))  (line gap11 year ,lp(solid)lw(vthin))  (line gap12 year ,lp(solid)lw(vthin))  (line gap13 year ,lp(solid)lw(vthin))  (line gap14 year ,lp(solid)lw(vthin))  (line gap15 year ,lp(solid)lw(vthin))  (line gap16 year ,lp(solid)lw(vthin))  (line gap17 year ,lp(solid)lw(vthin)) (line gap18 year ,lp(solid)lw(vthin))  (line gap19 year ,lp(solid)lw(vthin))  (line gap20 year ,lp(solid)lw(vthin))  (line gap21 year ,lp(solid)lw(vthin))  (line gap22 year ,lp(solid)lw(vthin))  (line gap23 year ,lp(solid)lw(vthin))  (line gap24 year ,lp(solid)lw(vthin))  (line gap25 year ,lp(solid)lw(vthin))  (line gap26 year ,lp(solid)lw(vthin)) (line gap27 year ,lp(solid)lw(vthin)) (line gap28 year ,lp(solid)lw(vthin))  (line gap29 year ,lp(solid)lw(vthin))  (line gap30 year ,lp(solid)lw(vthin))  (line gap31 year ,lp(solid)lw(vthin))  (line gap32 year ,lp(solid)lw(vthin))  (line gap33 year ,lp(solid)lw(vthin))  (line gap34 year ,lp(solid)lw(vthin)) (line gap35 year ,lp(solid)lw(vthin)) (line gap36 year ,lp(solid)lw(vthin)) (line gap37 year ,lp(solid)lw(vthin))  (line gap38 year ,lp(solid)lw(vthin))  (line gap39 year ,lp(solid)lw(vthin))  (line gap3 year ,lp(solid)lw(thick)lcolor(black)),  yline(0, lpattern(shortdash) lcolor(black)) xline(1988, lpattern(shortdash) lcolor(black)) xtitle("",si(small)) xlabel(#10) ytitle("Gap in cigsales per capita prediction error", size(small))         legend(off)"'
 .date = "28 May 2020"
-.time = "16:38:22"
+.time = "16:49:18"
 .dta_file = "../data/synth/placebo_bmprate.dta"
-.dta_date = "28 May 2020 16:38"
+.dta_date = "28 May 2020 16:49"
 <EndItem>

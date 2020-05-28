@@ -209,42 +209,45 @@ xtitle("",si(small)) xlabel(#10) ytitle("Gap in cigsales per capita prediction e
 
 graph save Graph ../figures/synth_placebo_bmprate.gph, replace
 
-* Drop the outliers (RMSPE is 5 times more than Texas: drops 11, 28, 32, 33, and 41)
+* use inference, excel to find out the outliers
+* Drop the outliers (RMSPE is 5 times more than Texas: drops 13, 22, 24, 29, 34 and 39)
 * Picture of the full sample, including outlier RSMPE
 #delimit;	
 
 twoway 
 (line gap1 year ,lp(solid)lw(vthin)) 
 (line gap2 year ,lp(solid)lw(vthin)) 
+(line gap3 year ,lp(solid)lw(vthin)) 
 (line gap4 year ,lp(solid)lw(vthin)) 
 (line gap5 year ,lp(solid)lw(vthin))
 (line gap6 year ,lp(solid)lw(vthin)) 
+(line gap7 year ,lp(solid)lw(vthin)) 
 (line gap8 year ,lp(solid)lw(vthin)) 
 (line gap9 year ,lp(solid)lw(vthin)) 
 (line gap10 year ,lp(solid)lw(vthin)) 
+(line gap11 year ,lp(solid)lw(vthin)) 
 (line gap12 year ,lp(solid)lw(vthin)) 
-(line gap13 year ,lp(solid)lw(vthin)) 
+(line gap14 year ,lp(solid)lw(vthin)) 
 (line gap15 year ,lp(solid)lw(vthin)) 
 (line gap16 year ,lp(solid)lw(vthin)) 
 (line gap17 year ,lp(solid)lw(vthin))
 (line gap18 year ,lp(solid)lw(vthin)) 
+(line gap19 year ,lp(solid)lw(vthin)) 
 (line gap20 year ,lp(solid)lw(vthin)) 
 (line gap21 year ,lp(solid)lw(vthin)) 
-(line gap22 year ,lp(solid)lw(vthin)) 
 (line gap23 year ,lp(solid)lw(vthin)) 
-(line gap24 year ,lp(solid)lw(vthin)) 
 (line gap25 year ,lp(solid)lw(vthin)) 
 (line gap26 year ,lp(solid)lw(vthin))
 (line gap27 year ,lp(solid)lw(vthin))
-(line gap29 year ,lp(solid)lw(vthin)) 
+(line gap28 year ,lp(solid)lw(vthin)) 
 (line gap30 year ,lp(solid)lw(vthin)) 
 (line gap31 year ,lp(solid)lw(vthin)) 
-(line gap34 year ,lp(solid)lw(vthin))
+(line gap32 year ,lp(solid)lw(vthin)) 
+(line gap33 year ,lp(solid)lw(vthin)) 
 (line gap35 year ,lp(solid)lw(vthin))
 (line gap36 year ,lp(solid)lw(vthin))
 (line gap37 year ,lp(solid)lw(vthin)) 
 (line gap38 year ,lp(solid)lw(vthin)) 
-(line gap39 year ,lp(solid)lw(vthin))
 
 (line gap3 year ,lp(solid)lw(thick)lcolor(black)), /*treatment unit, California*/
 yline(0, lpattern(shortdash) lcolor(black)) xline(1993, lpattern(shortdash) lcolor(black))

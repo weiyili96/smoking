@@ -2,17 +2,17 @@ StataFileTM:00001:01000:LiveGPH:                       :
 00007:00007:
 *! classname: twowaygraph_g
 *! family: twoway
-*! command: twoway (line gap1 year ,lp(solid)lw(vthin))  (line gap2 year ,lp(solid)lw(vthin))  (line gap4 year ,lp(solid)lw(vthin))  (line gap5 year ,lp(solid)lw(vthin)) (line gap6 year ,lp(solid)lw(vthin))  (line gap8 year ,lp(solid)lw(vthin))  (line gap9 year ,lp(solid)lw(vthin))  (line gap10 year ,lp(solid)lw(vthin))  (line gap12 year ,lp(solid)lw(vthin))  (line gap13 year ,lp(solid)lw(vthin))  (line gap15 year ,lp(solid)lw(vthin))  (line gap16 year ,lp(solid)lw(vthin))  (line gap17 year ,lp(solid)lw(vthin)) (line gap18 year ,lp(solid)lw(vthin))  (line gap20 year ,lp(solid)lw(vthin))  (line gap21 year ,lp(solid)lw(vthin))  (line gap22 year ,lp(solid)lw(vthin))  (line gap23 year ,lp(solid)lw(vthin))  (line gap24 year ,lp(solid)lw(vthin))  (line gap25 year ,lp(solid)lw(vthin))  (line gap26 year ,lp(solid)lw(vthin)) (line gap27 year ,lp(solid)lw(vthin)) (line gap29 year ,lp(solid)lw(vthin))  (line gap30 year ,lp(solid)lw(vthin))  (line gap31 year ,lp(solid)lw(vthin))  (line gap34 year ,lp(solid)lw(vthin)) (line gap35 year ,lp(solid)lw(vthin)) (line gap36 year ,lp(solid)lw(vthin)) (line gap37 year ,lp(solid)lw(vthin))  (line gap38 year ,lp(solid)lw(vthin))  (line gap39 year ,lp(solid)lw(vthin))  (line gap39 year ,lp(solid)lw(thick)lcolor(black)),  yline(0, lpattern(shortdash) lcolor(black)) xline(1993, lpattern(shortdash) lcolor(black)) xtitle("",si(small)) xlabel(#10) ytitle("Gap in cigsales per capita prediction error", size(small))         legend(off)
+*! command: twoway (line gap1 year ,lp(solid)lw(vthin))  (line gap2 year ,lp(solid)lw(vthin))  (line gap3 year ,lp(solid)lw(vthin))  (line gap4 year ,lp(solid)lw(vthin))  (line gap5 year ,lp(solid)lw(vthin)) (line gap6 year ,lp(solid)lw(vthin))  (line gap7 year ,lp(solid)lw(vthin))  (line gap8 year ,lp(solid)lw(vthin))  (line gap9 year ,lp(solid)lw(vthin))  (line gap10 year ,lp(solid)lw(vthin))  (line gap11 year ,lp(solid)lw(vthin))  (line gap12 year ,lp(solid)lw(vthin))  (line gap14 year ,lp(solid)lw(vthin))  (line gap15 year ,lp(solid)lw(vthin))  (line gap16 year ,lp(solid)lw(vthin))  (line gap17 year ,lp(solid)lw(vthin)) (line gap18 year ,lp(solid)lw(vthin))  (line gap19 year ,lp(solid)lw(vthin))  (line gap20 year ,lp(solid)lw(vthin))  (line gap21 year ,lp(solid)lw(vthin))  (line gap23 year ,lp(solid)lw(vthin))  (line gap25 year ,lp(solid)lw(vthin))  (line gap26 year ,lp(solid)lw(vthin)) (line gap27 year ,lp(solid)lw(vthin)) (line gap28 year ,lp(solid)lw(vthin))  (line gap30 year ,lp(solid)lw(vthin))  (line gap31 year ,lp(solid)lw(vthin))  (line gap32 year ,lp(solid)lw(vthin))  (line gap33 year ,lp(solid)lw(vthin))  (line gap35 year ,lp(solid)lw(vthin)) (line gap36 year ,lp(solid)lw(vthin)) (line gap37 year ,lp(solid)lw(vthin))  (line gap38 year ,lp(solid)lw(vthin))   (line gap3 year ,lp(solid)lw(thick)lcolor(black)),  yline(0, lpattern(shortdash) lcolor(black)) xline(1993, lpattern(shortdash) lcolor(black)) xtitle("",si(small)) xlabel(#10) ytitle("Gap in cigsales per capita prediction error", size(small))         legend(off)
 *! command_date: 28 May 2020
-*! command_time: 16:21:03
+*! command_time: 16:52:16
 *! datafile: ../data/synth/placebo_bmprate.dta
-*! datafile_date: 28 May 2020 16:19
+*! datafile_date: 28 May 2020 16:49
 *! scheme: s2color
 *! naturallywhite: 1
 *! xsize: 5.5
 *! ysize: 4
 *! end
-<BeginItem> serset K600002cc9780 
+<BeginItem> serset K600002c0d6c0 
 <BeginSerset>
 <BeginSeries>
 .name = `"gap1"'
@@ -45,6 +45,18 @@ StataFileTM:00001:01000:LiveGPH:                       :
 .type.set numeric
 .min =  -6.656001091003418
 .max =  9.300300598144531
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"gap3"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  -24.53890037536621
+.max =  4.546499252319336
 .median = (.)
 .pct25 = (.)
 .pct75 = (.)
@@ -87,6 +99,18 @@ StataFileTM:00001:01000:LiveGPH:                       :
 .categories = (.)
 <EndSeries>
 <BeginSeries>
+.name = `"gap7"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  -18.3185977935791
+.max =  2.283596277236938
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
 .name = `"gap8"'
 .label = `""'
 .format = `"%9.0g"'
@@ -123,6 +147,18 @@ StataFileTM:00001:01000:LiveGPH:                       :
 .categories = (.)
 <EndSeries>
 <BeginSeries>
+.name = `"gap11"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  -7.105202198028564
+.max =  10.89249992370605
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
 .name = `"gap12"'
 .label = `""'
 .format = `"%9.0g"'
@@ -135,12 +171,12 @@ StataFileTM:00001:01000:LiveGPH:                       :
 .categories = (.)
 <EndSeries>
 <BeginSeries>
-.name = `"gap13"'
+.name = `"gap14"'
 .label = `""'
 .format = `"%9.0g"'
 .type.set numeric
-.min =  -63.67599868774414
-.max =  40.18860244750977
+.min =  -5.522403240203857
+.max =  10.94509983062744
 .median = (.)
 .pct25 = (.)
 .pct75 = (.)
@@ -195,6 +231,18 @@ StataFileTM:00001:01000:LiveGPH:                       :
 .categories = (.)
 <EndSeries>
 <BeginSeries>
+.name = `"gap19"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  -4.453705310821533
+.max =  12.21120166778564
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
 .name = `"gap20"'
 .label = `""'
 .format = `"%9.0g"'
@@ -219,36 +267,12 @@ StataFileTM:00001:01000:LiveGPH:                       :
 .categories = (.)
 <EndSeries>
 <BeginSeries>
-.name = `"gap22"'
-.label = `""'
-.format = `"%9.0g"'
-.type.set numeric
-.min =  -30.10000610351563
-.max =  116.8000183105469
-.median = (.)
-.pct25 = (.)
-.pct75 = (.)
-.categories = (.)
-<EndSeries>
-<BeginSeries>
 .name = `"gap23"'
 .label = `""'
 .format = `"%9.0g"'
 .type.set numeric
 .min =  -15.6391019821167
 .max =  1.549703359603882
-.median = (.)
-.pct25 = (.)
-.pct75 = (.)
-.categories = (.)
-<EndSeries>
-<BeginSeries>
-.name = `"gap24"'
-.label = `""'
-.format = `"%9.0g"'
-.type.set numeric
-.min =  -32.40031051635742
-.max =  10.7566967010498
 .median = (.)
 .pct25 = (.)
 .pct75 = (.)
@@ -291,12 +315,12 @@ StataFileTM:00001:01000:LiveGPH:                       :
 .categories = (.)
 <EndSeries>
 <BeginSeries>
-.name = `"gap29"'
+.name = `"gap28"'
 .label = `""'
 .format = `"%9.0g"'
 .type.set numeric
-.min =  -50.01850128173828
-.max =  2.220496416091919
+.min =  -6.689296245574951
+.max =  6.53090238571167
 .median = (.)
 .pct25 = (.)
 .pct75 = (.)
@@ -327,12 +351,24 @@ StataFileTM:00001:01000:LiveGPH:                       :
 .categories = (.)
 <EndSeries>
 <BeginSeries>
-.name = `"gap34"'
+.name = `"gap32"'
 .label = `""'
 .format = `"%9.0g"'
 .type.set numeric
-.min =  -28
-.max =  -4.799999237060547
+.min =  -3.702399253845215
+.max =  19.88220024108887
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"gap33"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  -16.34860038757324
+.max =  4.955695629119873
 .median = (.)
 .pct25 = (.)
 .pct75 = (.)
@@ -386,107 +422,99 @@ StataFileTM:00001:01000:LiveGPH:                       :
 .pct75 = (.)
 .categories = (.)
 <EndSeries>
-<BeginSeries>
-.name = `"gap39"'
-.label = `""'
-.format = `"%9.0g"'
-.type.set numeric
-.min =  -23.41569900512695
-.max =  9.67640495300293
-.median = (.)
-.pct25 = (.)
-.pct75 = (.)
-.categories = (.)
-<EndSeries>
 .weight_id = (.)
 <BeginSersetData>
-sersetreadwrite        şÿşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşgap1 008 d                                                                                                                                            year 009                                                                                                                                              gap2 007 tic                                                                                                                                          gap4                                                                                                                                                  gap5                                                                                                                                                  gap6                                                                                                                                                  gap8                                                                                                                                                  gap9                                                                                                                                                  gap10                                                                                                                                                 gap12                                                                                                                                                 gap13                                                                                                                                                 gap15                                                                                                                                                 gap16                                                                                                                                                 gap17                                                                                                                                                 gap18                                                                                                                                                 gap20                                                                                                                                                 gap21                                                                                                                                                 gap22                                                                                                                                                 gap23                                                                                                                                                 gap24                                                                                                                                                 gap25                                                                                                                                                 gap26                                                                                                                                                 gap27                                                                                                                                                 gap29                                                                                                                                                 gap30                                                                                                                                                 gap31                                                                                                                                                 gap34                                                                                                                                                 gap35                                                                                                                                                 gap36                                                                                                                                                 gap37                                                                                                                                                 gap38                                                                                                                                                 gap39                                                                                                                                                 %9.0g                                                    %10.0g                                                   %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                       ÀUNÀ     È@   À¾ŸÀ    _ËÀ   €u‚*À    ûøê¿    !À   À¼T/À    ÖÀ   €{á%À    ‡ÖOÀ   àG5À   €¡Å$À    8À    zò	À   `$À   €”5À    š>À   `8G/À   `=3@À   @*8'À   Àà>À   àx§-À   @^IÀ    ŞÑ%À    æ®À      <À    ×³5À   `ˆ#6À    Q
-À    ¨"À   @kj7À   à¬X@     @Ÿ@    Á™"@   @A1@    çŠ0@   @ü0E@    Kè)@    {a@   @ÔªE@    Ê.@    $D@   àÜ"@   ÀìÍ'@    ;Ğ"@    åA%@    I]@   Àù?0@   €33]@   À•Ëø?   Àmƒ%@    ù@   àJ(%@   `ËÀ0@    “Ã@   €Qº)@   ` x,@    33À   @‡v)@   @O@    ÷A@   @O¯"@   ÀQZ#@®rêÀ     È@DÏf?´r_A=W„A¾ı¨Aİ`Àç`ÀÕ)Ğ@5#F@X,oÂQã§@>P(ÀÀÁÀĞ“OÀYÕk@ÏDGAÎÌÛB‹u!Àë™ÂRÁ9ÁWB)AíûÙ¿şTËÁgŸ[ÀrM¯À  ÄÁ®¾ŠÁğF¿@ñï@°„Ì¿/‡†ÁîcÊÀ     Ì@¶¿Ã9MA
-¾BA?pÃAÍ‘À›!:ÀHèé@Ü/Á9´~Âê/A&AÙó=?Ø¼3¿úæD@í¤@  åB?yÀÛ‚­Á}?%ÁùËAÛùn?}éúÁ¸b?Á²À43ÇÁ¸­Á PÀë‚?ékÀu×¨Ás GÀ     Ğ@«¶ÎÀ¯‹zA2²ç@ÉQAÏšî@¶Ø›ÀrXt@båÊÀX£vÂ…ëç@-&Áh4”@Cy ¿[ áÀŠSLÀœ™éBº¶¯½ÀÈÀÙÁ|Ï@şõ§?üS¦ÁD.À7ï¬À  àÁ˜!SÁ:ú1ÀX	@.3ÀM»Á*@À     Ô@·Ã’¿
-‚ˆAÄ”@NÚ>A=cş?Ö$âÀ¶¯7@œö€À”mäÁ/!£@‘ês¿8@u¤§?yÇ¿ÀÁŸÊ¿43šB™-°¾çûAW–ÇÀXÜ¦?)i¿‡AgÁô´?1w½Àœ™ÑÁC.§ÀÉÎÀŠâ—¿v¼¿ZS»ÁSÔ
-¿     Ø@¤*ÀÒDAwãõ?îĞ@85b@8ö>ÚM:@ğ•ˆÀÓÅPÁİf¿@L5¿9€c@¾Ä?ãqÀå(@˜™eBêö­¿$|A˜L×Àïu@¿£*@•nÁ"aB?_"pÀœ™ÅÁ ªØ¿Æc”¿ÖTé¿ø’‰¿RtÁùñ>     Ü@Ãšş¿"¾”D¿İÇW¿2÷>ªl,½ÅŒ?»R¾B»Às¤4½°E>/ÑÕ<WÑ>Hgæ½uÉ0@hf8BY(>MYô@ä_T¾®Â¿|ğø¾n«>Öî)¿GX—=dfÚÁÛk	¿b¾¡Mâ>+,½äº»S?     à@°¦ÀÊ‚¢¾á-è¿)Ò+@¿é%?Â~³¿½Gµ@oc^=·á0ÁB ¹?^í?–Ğ½œ ˜?^?5ıÀhfnBf÷À‡8ü@âXc@÷ÀÅF»¿o¼Á£ar?ªó¬>  ÄÁŠÏ@bÊ\="‹@I¾j4ÂÀ\ ©¿     ä@lÅ¦¿êİ’¿q¿…?O@¨‚á?ò¹ú¿.İ|APÙ]¿ún™À6ş¤?×¼Ò>AÄñ¾3?Ù1U>›Ö"Á˜™EB·ÊYÀsVu@-ZD¿ÓH¶¿¨ª·?z@ÁJ²È<d ‰¿43ÃÁ£›¨@ı—À÷İA£à>)tÀé‡Ì?     è@İvŞ>ıZvÀN¿^;­@ùIı>o»?=°&ÀKØÀ¸ÏÀ™Ô/¾/˜?	æn¿ôë/¾È¼Á½¶{àÀœ™3BŒ PÀšOş¾É À°D˜>Ğ.n@EÁ@1îš¾  ¼Á˜Tú¿jx‚@ÔÊÇ@<8¿¿A?¿b¯”?     ì@-ÿ½	]ÀÕÂt¿bx
-@‘]œ¾±ÅM¿sÍ¿Uãå¿ƒ±Àav¿óé¥?!0>É+¾Ša"¿X[5ÀĞÌBQ.À}Àt?¿}Q>½ê@3`À"ÓM¿®@43¯ÁQÛˆ?õ>@×Å~¾mö>ÒAéxP=     ğ@Mí@—ó=>µf¿‹«í>vY—¾şëë=ıFÀ7†ë½Œëé?ÃË\½íó[> æê=¢	>ã3Í½W‹HÀ  Bti¾¾)ÀÀI-?ØÕÖ>(¡?ÎÚ9¿(“ë>!ßG=03ßÁ²M„>ÛÁ-¼sYU¿€XH¿:–"?Òî¿     ô@uáç>*Z?ğ‡À•Ğ#@"-¿{µAÀ«À™¾ªm@DèÁ¿LGy»¬<l@ñZ ¾‰kº¾ô!M¿Rá¢ÀÌÌB!“¿Éo&ÁLÖ?ğk9?İ1@û…«¾TR¿¦÷S?43ËÁ€à”@š¦?sÀÀºi?ôj‹@Fí¿     ø@Öı8À]K¨¾Ü}À‰?»@°‹û¿‡?1À¡r@Q2a@ (E@“«9@à‘T@B(ö?kãå¿ò\@JÁ˜™éA?‘À±5›ÀF@‚6@şË´@Ûù²Àƒ€¦¿°i.?43¿Áïƒn@ë3Ó¾åL¬¿½÷ä¾>v×?½TEÀ     ü@â8¥>T‚z@©#‹ÀÃø@EN@cç»¿´Á@Q‡@·¾ï4@8Å?ÕşÂ?½VLÀåQˆ¿W¯âÀ`fşA®\Æ?ïöÿÀîCª?¯p>çì@š™7Áì3IÀ|x‚?hfÚÁy¿/@³¿E%ÁÀÁæjÀ      Ÿ@àO­¾âä@Zô?s4¤@1y@0ÉU?]q@Uv‘@vÕ•ÀßàA3—c@`4ñ>+nÀíÖ?.Ì£Á83ÿA›‰TÀX}@¹şê¿!@HÛU@…ÀÅ[¿Yo @ÌÌ´Á¼½	i ?ÈˆRÀ¸‹;ÀÀI@ÁĞÀ     Ÿ@òa0¿k˜t@"Ï×¾ù(A8>@Ø@×ÌŠ@¸Å…?ÀÅ‡@‘?«İ@k¿(u2À½zD?|ğÀ ™•AÇåÀò…À´Ø‡À–×½=“»~@êùòÀHLÀ7@  ¬ÁÆf9@8-’?ÅÀ®5¿ÜMòÀ;K„½     Ÿ@ÎÌ<¿æÙt@uÑ>u²@½ı?>º‘?êq´@ÊTYÀ±@jo	Áïr(?Ào_+À™G©?°şÂÀÈÌ€Aÿ¥?ªëÀ%:ˆÀ–Ó>Å0M@xlÀ/°â¿˜w@Àdf¾ÁĞ÷Á\Êâ?M–•@jjÔ¿EYªÀuó^¿     Ÿ@Í˜ŸÀîQ|@ù@hMAéoÿ?gÌ=ÀVAzÀ£ÀNÀÏxÙ?·¿ô@¥g/À¢ŒY¿Áù?[@83¿AÒÙpÀ².Á,ÄÃÀüÇ˜¿X@Šl`Á(XÊ¾%æÀ ™iÁšÚÀåÇ@ıÎ¿ºt@äUÁ2Õ>     Ÿ@ãíü¾Ûì.¿ĞÜ@xTJ@#¢T¿fÖQ»¸¡@Å1¾u“A3B=‹*>¦«­¾³ï‡>¸¾Û½‰@`fæ@9j}¿ºµÀz--À‡Š?mÕÀ@`7?‡”K=˜™µÁWµó=·1?&Û?Õ=-@c|¿=‡À     Ÿ@bÇÀVQÀ\Hß>úÔ@mhÇÀŞQ˜?~&kAµÀµñ_A1n_@mwm?Qê@õf4¿’…B@©ÑÈ@ f¦?Í‘„À½fõÀfv;ÀªP?%\OÀ,.Á×T™?©%ü¿43‹ÁïcŠÀ!vÀ¥ÓË>­ÍV@X[ù?‚P@     Ÿ@½›ÀPÈS@­
-zÀ^¡WAëQAV„ÀY¹µAŞ’?!Á B—C?@~É@u´¾bõ-À—\–?ÎÿAĞÌğÁ©á‡À†jÚÀZ”À'øª?xÁ«ÑÁi?¼‚±?43‹ÁUæ@N¯®ÀáĞ¼@j@ZşıÀÌd¢?     Ÿ@îÂ>ìß?†/
-Á-Ä@¦’²@Y)¿0ª°A©Òæ?VBWÓš@#½@÷¾ı>Ä.@'cV@eË¿ÈÌÌÁ§¤œÀ'ÿı@Íç @á’9?Ç;mÁˆ–ŠÁ–:Ñ@Ş°@43ƒÁ.ÿç@InÁjÅ@I¬@¿Ÿ’@Ñ¨Œ¿      Ÿ@ÎA	x@HYŞÀrŠAËt@²ŞÑ>wœÍA?Ş—Ba]@s¼¨@]bÀ¶È´@Î÷O@4ß™À83¿Á7,°À­@ø@?²ÀiT?FÁ_º¬ÁTğ½¿8É@43ƒÁ:´KAı1OÁvÁH?_ü@ßAÙX@     $Ÿ@ Ş>À ¹?9’Áš€A•æ§@¼Áß?¼ÚÛA’Ò.@ÕUäAWt(ÀXåL@¢¢;@Îxó@Z—@¡’ÒÀ ™•ÁàzÜÀ,CA¦,û?À=ßjÁÅuíÁSH¯?ı¬@ÌÌLÁÇn@­ØÁä‰A·›@ğ’@gÅ‚@     (Ÿ@Yõ¿ÀİF@¬TÁˆ°™A]BOA äÀ¥BG‹ÀQÑãAh;¡À±¶Ú@qhÏ@´%®@Ìçò¿VYFÀhf‚Á1ÿÁy¾ÁSÚkÀ)Š¿¿ f¡@—îÂèT©¿-Ë	AdfFÁY¨A­­pÁ&~bAÖ;¸@¬„@É‰À     ,Ÿ@öıÔÀBêÀW†&ÁRt‘AŞ.Àc;Á–®BâFÀÑóAŞÁ(:Aüë@v¬å@ğô^@•CKÁhf†ÁÕxÁuh“@Ï2TÀ=k@å6Aì<ÂM”öÀÅcA  pÁIê$AÂ„ÁÀÒAâÇæ@wA<À     0Ÿ@¹bgÀÏ[$ÀÇ=Á­Ï·A	äÀã	ÁP@Bˆ*ÀxËBè•ÁÔÎï@hˆA(*AÖƒF@#—wÁ  ¨Ásğ Án,AN9Àvh™¿S–Aû>%Âğ.ÁL¿A03;Á¯rÁ'u„ÁàÇAäõ@Ì±¨@]Œ?     4Ÿ@Æã°ÀP¨UÀ|FÁÅş}AÜÀı~,Á~?B·,_ÀUÉáA Á¹I$Aâ¬˜@3^´@ä•
-@t¤¬ÁpfFÁÃ9zÁvµ‡@ÅdºÀ˜¼?‚·CA/Â•Aƒ?¡@˜™™À¾A—Á³£ÁŒÛÅAzzA¬«Å?;i[@     8Ÿ@×±À ×¿ .ÁB$ÎA²ïÿ?¾†Á)'BšÀ¦½HA’©nÁá68A‰ôÅ@eŞ÷@]Üö?ŠlbÁ   @/nÁ2¶?@‹Àírw¿5<cAÅ`-ÂŒÒMA)ó@ff¢ÁÈ˜—ÁC±ÁPëüA%©±@1LÀ.ã¥?     <Ÿ@+€½À˜ 4=8p>Á+XB4#@æ¥zÁ¢V-B¢èÀ°BA‡8ªÁfo>AØA—nAIêò@Ë·ÀÀÌÌ@~ûÁ<’GÁ/(rÀÒ¿[†ABÂ}Íj¿×¤@ÌÌ|ÁÁì|Á”:‘Á¸¯B=$@8õ?b4@     @Ÿ@_³¨À¡3"??&Áâ‡)Bi&2¿E‹;Á"=BdM—À˜U®Ax‘Á	FA¯¯Ñ@_A¹¨d@zFÜÀ`fÁÚÎÁ¬áÀ3À&HP? ‰bAòHÂò§=	X@˜™QÁëbÁ‹R…ÁiÑBv @/ŠÀ
+sersetreadwrite "      şÿşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşgap1 008 d                                                                                                                                            year 009                                                                                                                                              gap2 007 tic                                                                                                                                          gap3                                                                                                                                                  gap4                                                                                                                                                  gap5                                                                                                                                                  gap6                                                                                                                                                  gap7                                                                                                                                                  gap8                                                                                                                                                  gap9                                                                                                                                                  gap10                                                                                                                                                 gap11                                                                                                                                                 gap12                                                                                                                                                 gap14                                                                                                                                                 gap15                                                                                                                                                 gap16                                                                                                                                                 gap17                                                                                                                                                 gap18                                                                                                                                                 gap19                                                                                                                                                 gap20                                                                                                                                                 gap21                                                                                                                                                 gap23                                                                                                                                                 gap25                                                                                                                                                 gap26                                                                                                                                                 gap27                                                                                                                                                 gap28                                                                                                                                                 gap30                                                                                                                                                 gap31                                                                                                                                                 gap32                                                                                                                                                 gap33                                                                                                                                                 gap35                                                                                                                                                 gap36                                                                                                                                                 gap37                                                                                                                                                 gap38                                                                                                                                                 %9.0g                                                    %10.0g                                                   %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                       ÀUNÀ     È@   À¾ŸÀ   `õ‰8À    _ËÀ   €u‚*À    ûøê¿    Q2À    !À   À¼T/À    ÖÀ    ºkÀ   €{á%À   àğÀ   àG5À   €¡Å$À    8À    zò	À    ˜ĞÀ   `$À   €”5À   `8G/À   @*8'À   Àà>À   àx§-À   àÖÁÀ    ŞÑ%À    æ®À   €ƒÀ   à=Y0À    ×³5À   `ˆ#6À    Q
+À    ¨"À   à¬X@     @Ÿ@    Á™"@   €/@   @A1@    çŠ0@   @ü0E@    ÎD@    Kè)@    {a@   @ÔªE@   ÀõÈ%@    Ê.@    äã%@   àÜ"@   ÀìÍ'@    ;Ğ"@    åA%@    "l(@    I]@   Àù?0@   À•Ëø?    ù@   àJ(%@   `ËÀ0@   à¤@   €Qº)@   ` x,@   à×á3@   à¡Ò@   @‡v)@   @O@    ÷A@   @O¯"@®rêÀ     È@DÏf?ì|‘@´r_A=W„A¾ı¨AÜ+E?İ`Àç`ÀÕ)Ğ@ŸÒN¿5#F@HP–@Qã§@>P(ÀÀÁÀĞ“OÀÈ“+@YÕk@ÏDGA‹u!ÀRÁ9ÁWB)AíûÙ¿Ãå•ÀgŸ[ÀrM¯ÀôlÀ¦ñf@®¾ŠÁğF¿@ñï@°„Ì¿îcÊÀ     Ì@¶¿hÜÆ?Ã9MA
+¾BA?pÃAZä¡>Í‘À›!:ÀHèé@:‚^ÀÜ/Á’7@ê/A&AÙó=?Ø¼3¿J@úæD@í¤@?yÀ}?%ÁùËAÛùn?·ÖÀ¸b?Á²À¹ƒş¿°N@¸­Á PÀë‚?ékÀs GÀ     Ğ@«¶ÎÀĞ1g¿¯‹zA2²ç@ÉQAíâ¶¿Ïšî@¶Ø›ÀrXt@¬%ÔÀbåÊÀ,A@…ëç@-&Áh4”@Cy ¿HÅ5<[ áÀŠSLÀº¶¯½ÙÁ|Ï@şõ§?üJ=ÀD.À7ï¬ÀûC@’¤½˜!SÁ:ú1ÀX	@.3À*@À     Ô@·Ã’¿´±À
+‚ˆAÄ”@NÚ>A$ÿ?=cş?Ö$âÀ¶¯7@#¶Àœö€ÀÁê¢>/!£@‘ês¿8@u¤§?=„å¿yÇ¿ÀÁŸÊ¿™-°¾W–ÇÀXÜ¦?)i¿Tû+¿ô´?1w½Àà;2Àdâ¯¿C.§ÀÉÎÀŠâ—¿v¼¿SÔ
+¿     Ø@¤*ÀV\¿ÒDAwãõ?îĞ@q&@85b@8ö>ÚM:@Ë{Àğ•ˆÀ˜òÀ¿İf¿@L5¿9€c@¾Ä?Ù½ãqÀå(@êö­¿˜L×Àïu@¿£*@{)i>"aB?_"pÀıí¿¶³	? ªØ¿Æc”¿ÖTé¿ø’‰¿ùñ>     Ü@Ãšş¿®Ç˜>"¾”D¿İÇW¿} =2÷>ªl,½ÅŒ?35o½»R¾†A¾¾s¤4½°E>/ÑÕ<WÑ>yg>Hgæ½uÉ0@Y(>ä_T¾®Â¿|ğø¾©B>¾Öî)¿GX—=@d¾ô+ÀÛk	¿b¾¡Mâ>+,½S?     à@°¦À.‡'>Ê‚¢¾á-è¿)Ò+@gò ¿¿é%?Â~³¿½Gµ@{lx>oc^=sWÁ=B ¹?^í?–Ğ½œ ˜?q®æ¿^?5ıÀf÷ÀâXc@÷ÀÅF»¿Das?£ar?ªó¬>µØÎ> ÉQÀŠÏ@bÊ\="‹@I¾\ ©¿     ä@lÅ¦¿«?êİ’¿q¿…?O@¢¹¿¨‚á?ò¹ú¿.İ|A9$(>PÙ]¿) ¿6ş¤?×¼Ò>AÄñ¾3?·ñ?Ù1U>›Ö"Á·ÊYÀ-ZD¿ÓH¶¿¨ª·?°$·¾J²È<d ‰¿0?Q=£›¨@ı—À÷İA£à>é‡Ì?     è@İvŞ>¥,@ıZvÀN¿^;­@72İ¿ùIı>o»?=°&À€©Š?KØÀGê&¾™Ô/¾/˜?	æn¿ôë/¾¡%T@È¼Á½¶{àÀŒ PÀÉ À°D˜>Ğ.n@hA­½@1îš¾†˜Ì¾ó®?˜Tú¿jx‚@ÔÊÇ@<8¿¿b¯”?     ì@-ÿ½b	É¿	]ÀÕÂt¿bx
+@yme<‘]œ¾±ÅM¿sÍ¿¨h¾Uãå¿‡×A¿av¿óé¥?!0>É+¾Ãx‘¿Ša"¿X[5ÀQ.Àt?¿}Q>½ê@œó>"ÓM¿®@Yõ[¾ôô?QÛˆ?õ>@×Å~¾mö>éxP=     ğ@Mí@0|C¾—ó=>µf¿‹«í>˜¡g>vY—¾şëë=ıFÀ–x½7†ë½f*	?ÃË\½íó[> æê=¢	>›kÚ>ã3Í½W‹HÀti¾I-?ØÕÖ>(¡?´¯=(“ë>!ßG=ˆ“i¿ù*@²M„>ÛÁ-¼sYU¿€XH¿Òî¿     ô@uáç>{-ù¿*Z?ğ‡À•Ğ#@Vƒ€¿"-¿{µAÀ«À™¾äAªm@BÆü?LGy»¬<l@ñZ ¾‰kº¾RÈ‡¿ô!M¿Rá¢À!“¿LÖ?ğk9?İ1@Ù‡Ô?TR¿¦÷S?°å>cI¥?€à”@š¦?sÀÀºi?Fí¿     ø@Öı8Àua¿]K¨¾Ü}À‰?»@9E;À°‹û¿‡?1À¡r@Ñ]ãÀQ2a@S#Â=“«9@à‘T@B(ö?kãå¿¦´c@ò\@JÁ?‘ÀF@‚6@şË´@/Åà>ƒ€¦¿°i.?¬†k@ù‰c@ïƒn@ë3Ó¾åL¬¿½÷ä¾½TEÀ     ü@â8¥>?µU¿T‚z@©#‹ÀÃø@Q6ó¿EN@cç»¿´Á@œ•ÀQ‡@>3•Àï4@8Å?ÕşÂ?½VLÀıHÀåQˆ¿W¯âÀ®\Æ?îCª?¯p>çì@'ıĞ@ì3IÀ|x‚?U¡@Zg@y¿/@³¿E%ÁæjÀ      Ÿ@àO­¾-Á?âä@Zô?s4¤@¿QÇ¾1y@0ÉU?]q@~Š.ÀUv‘@¸Æ*?ßàA3—c@`4ñ>+nÀP9 @íÖ?.Ì£Á›‰TÀ¹şê¿!@HÛU@©n¾Å[¿Yo @¸@äc@¼½	i ?ÈˆRÀ¸‹;ÀĞÀ     Ÿ@òa0¿ì¿k˜t@"Ï×¾ù(Ao`?8>@Ø@×ÌŠ@y•7À¸Å…?URß¿‘?«İ@k¿(u2À¯[=½zD?|ğÀÇåÀ´Ø‡À–×½=“»~@ ²?HLÀ7@5bL@VÚ‹@Æf9@8-’?ÅÀ®5¿;K„½     Ÿ@ÎÌ<¿²/¬¿æÙt@uÑ>u²@D‹”?½ı?>º‘?êq´@à±ÀÊTYÀe)CÀjo	Áïr(?Ào_+À“›hÀ™G©?°şÂÀÿ¥?%:ˆÀ–Ó>Å0M@ Àì=/°â¿˜w@ÀŒ¹O@•@Ğ÷Á\Êâ?M–•@jjÔ¿uó^¿     Ÿ@Í˜ŸÀx„ÀîQ|@ù@hMA	ª?éoÿ?gÌ=ÀVAÛ£¨ÀzÀ§nb¿ÏxÙ?·¿ô@¥g/À¢ŒY¿Á„ÀÁù?[@ÒÙpÀ,ÄÃÀüÇ˜¿X@‚h¹¿(XÊ¾%æÀvĞ@£@šÚÀåÇ@ıÎ¿ºt@2Õ>     Ÿ@ãíü¾z2ÀÛì.¿ĞÜ@xTJ@°…'>#¢T¿fÖQ»¸¡@%*¹¼Å1¾Gš¿3B=‹*>¦«­¾³ï‡>µüÿ¿¸¾Û½‰@9j}¿z--À‡Š?mÕÀw˜2½`7?‡”K=ß4‰@,!+ÀWµó=·1?&Û?Õ=-@=‡À     Ÿ@bÇÀ¬ÁVQÀ\Hß>úÔ@E%•ÀmhÇÀŞQ˜?~&kA¢WÀµÀ‡·°À1n_@mwm?Qê@õf4¿c/Ì?’…B@©ÑÈ@Í‘„Àfv;ÀªP?%\OÀ@×T™?©%ü¿O–A.«–¿ïcŠÀ!vÀ¥ÓË>­ÍV@‚P@     Ÿ@½›Àî8ÁPÈS@­
+zÀ^¡WA·––ÀëQAV„ÀY¹µA·ğ?Ş’?9´À—C?@~É@u´¾bõ-ÀzİÃ?—\–?ÎÿA©á‡ÀZ”À'øª?xÁN‚@i?¼‚±?óôA¿I|ÀUæ@N¯®ÀáĞ¼@j@Ìd¢?     Ÿ@îÂ>8]Áìß?†/
+Á-Ä@ÙÎ Á¦’²@Y)¿0ª°AÆåµ@©Òæ?ì°ø@WÓš@#½@÷¾ı>Ä.@òtâ¾'cV@eË¿§¤œÀÍç @á’9?Ç;mÁø—¯@–:Ñ@Ş°@«iA°oÁ.ÿç@InÁjÅ@I¬@Ñ¨Œ¿      Ÿ@ÎAi‘UÁ	x@HYŞÀrŠAœâÀËt@²ŞÑ>wœÍA6¦@?!/Aa]@s¼¨@]bÀ¶È´@L¸¢@Î÷O@4ß™À7,°À?²ÀiT?FÁşå¾Tğ½¿8É@«Wœ@CW<Á:´KAı1OÁvÁH?_ü@ÙX@     $Ÿ@ Ş>À†ˆÁ ¹?9’Áš€AAøÔÀ•æ§@¼Áß?¼ÚÛAÑ%@’Ò.@´}Ñ@Wt(ÀXåL@¢¢;@Îxó@öôJ@Z—@¡’ÒÀàzÜÀ¦,û?À=ßjÁ&ñ£?SH¯?ı¬@·ê&AH¦ÁÇn@­ØÁä‰A·›@gÅ‚@     (Ÿ@Yõ¿ÀÙN¦ÁİF@¬TÁˆ°™AqàĞÀ]BOA äÀ¥BíÙL@G‹À‹ıu@h;¡À±¶Ú@qhÏ@´%®@’²Š@Ìçò¿VYFÀ1ÿÁSÚkÀ)Š¿¿ f¡@yf@èT©¿-Ë	AC8AÑM$ÁY¨A­­pÁ&~bAÖ;¸@É‰À     ,Ÿ@öıÔÀ%uÁBêÀW†&ÁRt‘AŞ­ŒÁŞ.Àc;Á–®B£E¤@âFÀåHˆ@ŞÁ(:Aüë@v¬å@Â¨+Ağô^@•CKÁÕxÁÏ2TÀ=k@å6A;íõ?M”öÀÅcA¿ŸA¾gÁIê$AÂ„ÁÀÒAâÇæ@<À     0Ÿ@¹bgÀ¨ÁÏ[$ÀÇ=Á­Ï·A§½#Á	äÀã	ÁP@BÑ³Aˆ*À&£@è•ÁÔÎï@hˆA(*A!ZAÖƒF@#—wÁsğ ÁN9Àvh™¿S–Aëğ@ğ.ÁL¿A„[A‡/gÁ¯rÁ'u„ÁàÇAäõ@]Œ?     4Ÿ@Æã°À0İ«ÁP¨UÀ|FÁÅş}A»{ÁÜÀı~,Á~?B¦NA·,_À(8_@ Á¹I$Aâ¬˜@3^´@aCAä•
+@t¤¬ÁÃ9zÁÅdºÀ˜¼?‚·CAÃ¸@•Aƒ?¡@KqA•:eÁ¾A—Á³£ÁŒÛÅAzzA;i[@     8Ÿ@×±Àø˜Á ×¿ .ÁB$ÎAk„Á²ïÿ?¾†Á)'BÙ_AšÀŸ,G@’©nÁá68A‰ôÅ@eŞ÷@„|0A]Üö?ŠlbÁ/nÁ@‹Àírw¿5<cA_îB@ŒÒMA)ó@1{AÉaÁÈ˜—ÁC±ÁPëüA%©±@.ã¥?     <Ÿ@+€½À«OÄÁ˜ 4=8p>Á+XBFGjÁ4#@æ¥zÁ¢V-BeDA¢èÀèH¬@‡8ªÁfo>AØA—nA[şó@Iêò@Ë·À~ûÁ/(rÀÒ¿[†A½¨œ@}Íj¿×¤@J7zAïÉ‚ÁÁì|Á”:‘Á¸¯B=$@b4@     @Ÿ@_³¨À€HÂÁ¡3"??&Áâ‡)B}Œ’Ái&2¿E‹;Á"=B®G.AdM—À™!.Ax‘Á	FA¯¯Ñ@_AÙ=ë@¹¨d@zFÜÀÚÎÁ3À&HP? ‰bAû~@ò§=	X@TyAÄÜMÁëbÁ‹R…ÁiÑBv @
 <EndSersetData>
 <EndSerset>
 <EndItem>
 <BeginItem> scheme K600002dd3940 
 .setscheme , scheme(s2color) naturallywhite(1)
 <EndItem>
-<BeginItem> twowaygraph_g K600002ccb040 <UseScheme> K600002dd3940
-.sersets[1] = .__Map.K600002cc9780.ref
+<BeginItem> twowaygraph_g K600002c06500 <UseScheme> K600002dd3940
+.sersets[1] = .__Map.K600002c0d6c0.ref
 .insert (plotregion1 = .plotregion.new , style(scheme twoway) graph(`.objkey')) at 1 1
 .plotregion1.Declare plot1 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap1') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p1line) 
 .plotregion1.plot1.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
 .plotregion1.Declare plot2 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap2') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p2line) 
 .plotregion1.plot2.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot3 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap4') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p3line) 
+.plotregion1.Declare plot3 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap3') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p3line) 
 .plotregion1.plot3.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot4 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap5') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p4line) 
+.plotregion1.Declare plot4 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap4') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p4line) 
 .plotregion1.plot4.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot5 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap6') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p5line) 
+.plotregion1.Declare plot5 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap5') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p5line) 
 .plotregion1.plot5.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot6 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap8') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p6line) 
+.plotregion1.Declare plot6 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap6') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p6line) 
 .plotregion1.plot6.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot7 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap9') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p7line) 
+.plotregion1.Declare plot7 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap7') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p7line) 
 .plotregion1.plot7.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot8 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap10') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p8line) 
+.plotregion1.Declare plot8 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap8') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p8line) 
 .plotregion1.plot8.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot9 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap12') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p9line) 
+.plotregion1.Declare plot9 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap9') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p9line) 
 .plotregion1.plot9.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot10 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap13') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p10line) 
+.plotregion1.Declare plot10 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap10') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p10line) 
 .plotregion1.plot10.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot11 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap15') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p11line) 
+.plotregion1.Declare plot11 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap11') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p11line) 
 .plotregion1.plot11.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot12 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap16') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p12line) 
+.plotregion1.Declare plot12 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap12') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p12line) 
 .plotregion1.plot12.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot13 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap17') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p13line) 
+.plotregion1.Declare plot13 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap14') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p13line) 
 .plotregion1.plot13.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot14 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap18') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p14line) 
+.plotregion1.Declare plot14 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap15') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p14line) 
 .plotregion1.plot14.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot15 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap20') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p15line) 
+.plotregion1.Declare plot15 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap16') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p15line) 
 .plotregion1.plot15.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot16 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap21') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p1line) 
+.plotregion1.Declare plot16 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap17') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p1line) 
 .plotregion1.plot16.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot17 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap22') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p2line) 
+.plotregion1.Declare plot17 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap18') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p2line) 
 .plotregion1.plot17.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot18 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap23') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p3line) 
+.plotregion1.Declare plot18 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap19') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p3line) 
 .plotregion1.plot18.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot19 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap24') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p4line) 
+.plotregion1.Declare plot19 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap20') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p4line) 
 .plotregion1.plot19.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot20 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap25') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p5line) 
+.plotregion1.Declare plot20 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap21') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p5line) 
 .plotregion1.plot20.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot21 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap26') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p6line) 
+.plotregion1.Declare plot21 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap23') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p6line) 
 .plotregion1.plot21.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot22 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap27') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p7line) 
+.plotregion1.Declare plot22 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap25') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p7line) 
 .plotregion1.plot22.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot23 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap29') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p8line) 
+.plotregion1.Declare plot23 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap26') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p8line) 
 .plotregion1.plot23.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot24 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap30') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p9line) 
+.plotregion1.Declare plot24 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap27') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p9line) 
 .plotregion1.plot24.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot25 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap31') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p10line) 
+.plotregion1.Declare plot25 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap28') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p10line) 
 .plotregion1.plot25.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot26 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap34') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p11line) 
+.plotregion1.Declare plot26 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap30') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p11line) 
 .plotregion1.plot26.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot27 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap35') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p12line) 
+.plotregion1.Declare plot27 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap31') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p12line) 
 .plotregion1.plot27.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot28 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap36') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p13line) 
+.plotregion1.Declare plot28 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap32') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p13line) 
 .plotregion1.plot28.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot29 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap37') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p14line) 
+.plotregion1.Declare plot29 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap33') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p14line) 
 .plotregion1.plot29.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot30 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap38') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p15line) 
+.plotregion1.Declare plot30 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap35') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p15line) 
 .plotregion1.plot30.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot31 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap39') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p1line) 
+.plotregion1.Declare plot31 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap36') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p1line) 
 .plotregion1.plot31.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
-.plotregion1.Declare plot32 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap39') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p2line) 
-.plotregion1.plot32.style.editstyle line(color(black)) area(linestyle(color(black))) line(width(thick)) area(linestyle(width(thick))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
+.plotregion1.Declare plot32 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap37') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p2line) 
+.plotregion1.plot32.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
+.plotregion1.Declare plot33 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap38') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p3line) 
+.plotregion1.plot33.style.editstyle line(width(vthin)) area(linestyle(width(vthin))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
+.plotregion1.Declare plot34 = .yxview.new , type(line) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof gap3') xvariable(`.sersets[1].seriesof year')    plotregion(`.plotregion1.objkey') style(scheme p4line) 
+.plotregion1.plot34.style.editstyle line(color(black)) area(linestyle(color(black))) line(width(thick)) area(linestyle(width(thick))) line(pattern(solid)) area(linestyle(pattern(solid))) editcopy
 .plotregion1.clear_scales
 .plotregion1.reset_scales , noclear
-.n_views = 32
+.n_views = 34
 .n_plotregions = 1
-.last_style = 32
+.last_style = 34
 .x_scales = `" "1""'
 .y_scales = `" "1""'
 .create_axes 1 1 "9" "" 9
@@ -548,9 +576,9 @@ tempname glsty
 .insert (spacerb = .spacer.new) below plotregion1 , ring(11)
 .insert (spacerl = .spacer.new) leftof plotregion1 , ring(11)
 .insert (spacerr = .spacer.new) rightof plotregion1 , ring(11)
-.command = `"twoway (line gap1 year ,lp(solid)lw(vthin))  (line gap2 year ,lp(solid)lw(vthin))  (line gap4 year ,lp(solid)lw(vthin))  (line gap5 year ,lp(solid)lw(vthin)) (line gap6 year ,lp(solid)lw(vthin))  (line gap8 year ,lp(solid)lw(vthin))  (line gap9 year ,lp(solid)lw(vthin))  (line gap10 year ,lp(solid)lw(vthin))  (line gap12 year ,lp(solid)lw(vthin))  (line gap13 year ,lp(solid)lw(vthin))  (line gap15 year ,lp(solid)lw(vthin))  (line gap16 year ,lp(solid)lw(vthin))  (line gap17 year ,lp(solid)lw(vthin)) (line gap18 year ,lp(solid)lw(vthin))  (line gap20 year ,lp(solid)lw(vthin))  (line gap21 year ,lp(solid)lw(vthin))  (line gap22 year ,lp(solid)lw(vthin))  (line gap23 year ,lp(solid)lw(vthin))  (line gap24 year ,lp(solid)lw(vthin))  (line gap25 year ,lp(solid)lw(vthin))  (line gap26 year ,lp(solid)lw(vthin)) (line gap27 year ,lp(solid)lw(vthin)) (line gap29 year ,lp(solid)lw(vthin))  (line gap30 year ,lp(solid)lw(vthin))  (line gap31 year ,lp(solid)lw(vthin))  (line gap34 year ,lp(solid)lw(vthin)) (line gap35 year ,lp(solid)lw(vthin)) (line gap36 year ,lp(solid)lw(vthin)) (line gap37 year ,lp(solid)lw(vthin))  (line gap38 year ,lp(solid)lw(vthin))  (line gap39 year ,lp(solid)lw(vthin))  (line gap39 year ,lp(solid)lw(thick)lcolor(black)),  yline(0, lpattern(shortdash) lcolor(black)) xline(1993, lpattern(shortdash) lcolor(black)) xtitle("",si(small)) xlabel(#10) ytitle("Gap in cigsales per capita prediction error", size(small))         legend(off)"'
+.command = `"twoway (line gap1 year ,lp(solid)lw(vthin))  (line gap2 year ,lp(solid)lw(vthin))  (line gap3 year ,lp(solid)lw(vthin))  (line gap4 year ,lp(solid)lw(vthin))  (line gap5 year ,lp(solid)lw(vthin)) (line gap6 year ,lp(solid)lw(vthin))  (line gap7 year ,lp(solid)lw(vthin))  (line gap8 year ,lp(solid)lw(vthin))  (line gap9 year ,lp(solid)lw(vthin))  (line gap10 year ,lp(solid)lw(vthin))  (line gap11 year ,lp(solid)lw(vthin))  (line gap12 year ,lp(solid)lw(vthin))  (line gap14 year ,lp(solid)lw(vthin))  (line gap15 year ,lp(solid)lw(vthin))  (line gap16 year ,lp(solid)lw(vthin))  (line gap17 year ,lp(solid)lw(vthin)) (line gap18 year ,lp(solid)lw(vthin))  (line gap19 year ,lp(solid)lw(vthin))  (line gap20 year ,lp(solid)lw(vthin))  (line gap21 year ,lp(solid)lw(vthin))  (line gap23 year ,lp(solid)lw(vthin))  (line gap25 year ,lp(solid)lw(vthin))  (line gap26 year ,lp(solid)lw(vthin)) (line gap27 year ,lp(solid)lw(vthin)) (line gap28 year ,lp(solid)lw(vthin))  (line gap30 year ,lp(solid)lw(vthin))  (line gap31 year ,lp(solid)lw(vthin))  (line gap32 year ,lp(solid)lw(vthin))  (line gap33 year ,lp(solid)lw(vthin))  (line gap35 year ,lp(solid)lw(vthin)) (line gap36 year ,lp(solid)lw(vthin)) (line gap37 year ,lp(solid)lw(vthin))  (line gap38 year ,lp(solid)lw(vthin))   (line gap3 year ,lp(solid)lw(thick)lcolor(black)),  yline(0, lpattern(shortdash) lcolor(black)) xline(1993, lpattern(shortdash) lcolor(black)) xtitle("",si(small)) xlabel(#10) ytitle("Gap in cigsales per capita prediction error", size(small))         legend(off)"'
 .date = "28 May 2020"
-.time = "16:21:03"
+.time = "16:52:16"
 .dta_file = "../data/synth/placebo_bmprate.dta"
-.dta_date = "28 May 2020 16:19"
+.dta_date = "28 May 2020 16:49"
 <EndItem>
