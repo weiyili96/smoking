@@ -5102,9 +5102,9 @@ file ../data/synth/placebo_bmprate.dta saved
 . foreach i of local statelist {
   2.         use ../data/synth/synth_gap_bmprate`i', clear
   3.         
-.         gen gap3=gap`i'*gap`i'
-  4.         egen postmean=mean(gap3) if year>1988
-  5.         egen premean=mean(gap3) if year<=1988
+.         gen gap40=gap`i'*gap`i'
+  4.         egen postmean=mean(gap40) if year>1988
+  5.         egen premean=mean(gap40) if year<=1988
   6.         gen rmspe=sqrt(premean) if year<=1988
   7.         replace rmspe=sqrt(postmean) if year>1988
   8.         gen ratio=rmspe/rmspe[_n-1] if year==1989
@@ -5130,276 +5130,677 @@ file ../data/synth/placebo_bmprate.dta saved
 (20 missing values generated)
 (30 missing values generated)
 (Tobacco Sales in 39 US States)
-variable gap3 already defined
-r(110);
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
 
+. 
+. * show post/pre-expansion RMSPE ratio for all states, generate histogram
+. foreach i of local statelist {
+  2.         matrix rownames state`i'=`i'
+  3.         matlist state`i', names(rows)
+  4.                                                                 }
+
+           1 |  2.759904          .   1.049667 
+
+           2 |  2.467583          .   2.165873 
+
+           3 |  1.953227          .   9.475112 
+
+           4 |  7.642115          .   .2944492 
+
+           5 |  5.467154          .   1.816781 
+
+           6 |  9.649494          .   2.270279 
+
+           7 |  1.373981          .   8.737007 
+
+           8 |  2.709727          .   2.288396 
+
+           9 |  2.698181          .   3.016035 
+
+          10 |  5.802061          .   5.792045 
+
+          11 |  4.132195          .   1.625132 
+
+          12 |  4.075433          .   .7114788 
+
+          13 |  25.93409          .   1.080055 
+
+          14 |  2.188915          .   2.907456 
+
+          15 |  4.684616          .   2.230455 
+
+          16 |  4.248634          .   1.860292 
+
+          17 |  2.385979          .    2.39754 
+
+          18 |  1.656818          .   4.081299 
+
+          19 |  2.308289          .   3.178972 
+
+          20 |  2.706269          .   1.344405 
+
+          21 |  7.558956          .   1.493404 
+
+          22 |  59.03776          .   .2995524 
+
+          23 |  2.343531          .   3.660262 
+
+          24 |  10.82491          .   .6976489 
+
+          25 |  5.306276          .   .7349845 
+
+          26 |  3.680844          .   .3582746 
+
+          27 |  3.169874          .   3.776833 
+
+          28 |  2.568759          .    1.26927 
+
+          29 |    12.839          .   2.728624 
+
+          30 |  1.717064          .   3.722637 
+
+          31 |  3.034875          .   2.288252 
+
+          32 |  2.700563          .   4.844562 
+
+          33 |  2.753713          .   4.488627 
+
+          34 |  24.36728          .   .6132165 
+
+          35 |  7.998019          .   1.497231 
+
+          36 |  2.182308          .   7.220545 
+
+          37 |   3.56532          .   6.124552 
+
+          38 |   2.68352          .   2.162183 
+
+          39 |  11.94969          .   .4369527 
+
+. 
+. ssc install mat2txt, replace
+checking mat2txt consistency and verifying not already installed...
+all files already exist and are up to date.
+
+. 
+.         mat state=state1\state2\state4\state5\state6\state8\state9\state10\sta
+> te11\state12\state13\state15\state16\state17\state18\state20\state21\state22\s
+> tate23\state24\state25\state26\state27\state28\state29\state30\state31\state32
+> \state33\state34\state35\state36\state37\state38\state39
+
+.         mat2txt, matrix(state) saving(../inference/rmspe_bmprate.txt) replace
+
+.         insheet using ../inference/rmspe_bmprate.txt, clear
+(5 vars, 35 obs)
+
+.         ren v1 state
+
+.         drop v5
+
+.         gsort -ratio
+
+.         gen rank=_n
+
+.         gen p=rank/37
+
+.         
+.         export excel using ../inference/rmspe_bmprate, firstrow(variables) rep
+> lace
+file ../inference/rmspe_bmprate.xls saved
+
+. 
+.         import excel ../inference/rmspe_bmprate.xls, sheet("Sheet1") firstrow 
+> clear
+(6 vars, 35 obs)
+
+.         histogram ratio, bin(20) frequency fcolor(gs13) lcolor(black) ylabel(0
+> (2)12) xtitle(Post/pre RMSPE ratio) xlabel(0(1)25)
+(bin=20, start=.29444915, width=.34630478)
+
+. 
 end of do-file
-
-r(110);
 
 . do "/var/folders/st/xzrptnmx0lb7r93b976p0jc40000gn/T//SD00614.000000"
 
-. set more off
+. * Show the post/pre RMSPE ratio for all states, generate the histogram.
+. list rank p if state==39
 
+     +------------------+
+     | rank           p |
+     |------------------|
+ 32. |   32   .86486489 |
+     +------------------+
+
+. 
+end of do-file
+
+. do "/var/folders/st/xzrptnmx0lb7r93b976p0jc40000gn/T//SD00614.000000"
+
+.  #delimit cr
+delimiter now cr
 . local statelist  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 2
 > 4 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39
 
 . 
+.  foreach i of local statelist {
+  2.         use ../data/synth/synth_bmprate_`i' ,clear
+  3.         keep _Y_treated _Y_synthetic _time
+  4.         drop if _time==.
+  5.         rename _time year
+  6.         rename _Y_treated  treat`i'
+  7.         rename _Y_synthetic counterfact`i'
+  8.         gen gap`i'=treat`i'-counterfact`i'
+  9.         sort year 
+ 10.         save ../data/synth/synth_gap_bmprate`i', replace
+ 11. }
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate1.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate2.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate3.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate4.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate5.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate6.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate7.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate8.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate9.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate10.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate11.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate12.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate13.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate14.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate15.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate16.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate17.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate18.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate19.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate20.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate21.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate22.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate23.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate24.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate25.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate26.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate27.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate28.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate29.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate30.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate31.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate32.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate33.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate34.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate35.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate36.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate37.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate38.dta saved
+(Tobacco Sales in 39 US States)
+(7 observations deleted)
+file ../data/synth/synth_gap_bmprate39.dta saved
+
+. 
+. use ../data/synth/synth_gap_bmprate39.dta, clear
+(Tobacco Sales in 39 US States)
+
+. sort year
+
+. save ../data/synth/placebo_bmprate39.dta, replace
+file ../data/synth/placebo_bmprate39.dta saved
+
+. 
 . foreach i of local statelist {
-  2.         use ../data/synth/synth_gap_bmprate`i', clear
-  3.         
-.         gen gap39=gap`i'*gap`i'
-  4.         egen postmean=mean(gap3) if year>1988
-  5.         egen premean=mean(gap3) if year<=1988
-  6.         gen rmspe=sqrt(premean) if year<=1988
-  7.         replace rmspe=sqrt(postmean) if year>1988
-  8.         gen ratio=rmspe/rmspe[_n-1] if year==1989
-  9.         gen rmspe_post=sqrt(postmean) if year>1989
- 10.         gen rmspe_pre=rmspe[_n-1] if year==1989
- 11.         
-.         mkmat rmspe_pre rmspe_post ratio if year==1989, matrix (state`i')
- 12.                                                                 }
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(31 missing values generated)
-(0 real changes made)
-(31 missing values generated)
-(31 missing values generated)
-(31 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-gap3 ambiguous abbreviation
-r(111);
-
-end of do-file
-
-r(111);
-
-. do "/var/folders/st/xzrptnmx0lb7r93b976p0jc40000gn/T//SD00614.000000"
+  2.                 
+.                 merge year using ../data/synth/synth_gap_bmprate`i'
+  3.                 drop _merge
+  4.                 sort year
+  5.                 
+.         save ../data/synth/placebo_bmprate.dta, replace
+  6. }
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
+(note: you are using old merge syntax; see [D] merge for new syntax)
+file ../data/synth/placebo_bmprate.dta saved
 
 . 
 . ** Inference 2: Estimate the pre- and post-RMSPE and calculate the ratio of th
@@ -5414,9 +5815,9 @@ r(111);
 . foreach i of local statelist {
   2.         use ../data/synth/synth_gap_bmprate`i', clear
   3.         
-.         gen gap3=gap`i'*gap`i'
-  4.         egen postmean=mean(gap3) if year>1988
-  5.         egen premean=mean(gap3) if year<=1988
+.         gen gap40=gap`i'*gap`i'
+  4.         egen postmean=mean(gap40) if year>1988
+  5.         egen premean=mean(gap40) if year<=1988
   6.         gen rmspe=sqrt(premean) if year<=1988
   7.         replace rmspe=sqrt(postmean) if year>1988
   8.         gen ratio=rmspe/rmspe[_n-1] if year==1989
@@ -5442,273 +5843,711 @@ r(111);
 (20 missing values generated)
 (30 missing values generated)
 (Tobacco Sales in 39 US States)
-variable gap3 already defined
-r(110);
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
+(Tobacco Sales in 39 US States)
+(19 missing values generated)
+(12 missing values generated)
+(12 missing values generated)
+(12 real changes made)
+(30 missing values generated)
+(20 missing values generated)
+(30 missing values generated)
 
+. 
+. * show post/pre-expansion RMSPE ratio for all states, generate histogram
+. foreach i of local statelist {
+  2.         matrix rownames state`i'=`i'
+  3.         matlist state`i', names(rows)
+  4.                                                                 }
+
+           1 |  2.759904          .   1.049667 
+
+           2 |  2.467583          .   2.165873 
+
+           3 |  1.953227          .   9.475112 
+
+           4 |  7.642115          .   .2944492 
+
+           5 |  5.467154          .   1.816781 
+
+           6 |  9.649494          .   2.270279 
+
+           7 |  1.373981          .   8.737007 
+
+           8 |  2.709727          .   2.288396 
+
+           9 |  2.698181          .   3.016035 
+
+          10 |  5.802061          .   5.792045 
+
+          11 |  4.132195          .   1.625132 
+
+          12 |  4.075433          .   .7114788 
+
+          13 |  25.93409          .   1.080055 
+
+          14 |  2.188915          .   2.907456 
+
+          15 |  4.684616          .   2.230455 
+
+          16 |  4.248634          .   1.860292 
+
+          17 |  2.385979          .    2.39754 
+
+          18 |  1.656818          .   4.081299 
+
+          19 |  2.308289          .   3.178972 
+
+          20 |  2.706269          .   1.344405 
+
+          21 |  7.558956          .   1.493404 
+
+          22 |  59.03776          .   .2995524 
+
+          23 |  2.343531          .   3.660262 
+
+          24 |  10.82491          .   .6976489 
+
+          25 |  5.306276          .   .7349845 
+
+          26 |  3.680844          .   .3582746 
+
+          27 |  3.169874          .   3.776833 
+
+          28 |  2.568759          .    1.26927 
+
+          29 |    12.839          .   2.728624 
+
+          30 |  1.717064          .   3.722637 
+
+          31 |  3.034875          .   2.288252 
+
+          32 |  2.700563          .   4.844562 
+
+          33 |  2.753713          .   4.488627 
+
+          34 |  24.36728          .   .6132165 
+
+          35 |  7.998019          .   1.497231 
+
+          36 |  2.182308          .   7.220545 
+
+          37 |   3.56532          .   6.124552 
+
+          38 |   2.68352          .   2.162183 
+
+          39 |  11.94969          .   .4369527 
+
+. 
+. ssc install mat2txt, replace
+checking mat2txt consistency and verifying not already installed...
+all files already exist and are up to date.
+
+. 
+.         mat state=state1\state2\state3\state4\state5\state6\state7\state8\stat
+> e9\state10\state11\state12\state13\state14\state15\state16\state17\state18\sta
+> te19\state20\state21\state22\state23\state24\state25\state26\state27\state28\s
+> tate29\state30\state31\state32\state33\state34\state35\state36\state37\state38
+> \state39
+
+.         mat2txt, matrix(state) saving(../inference/rmspe_bmprate.txt) replace
+
+.         insheet using ../inference/rmspe_bmprate.txt, clear
+(5 vars, 39 obs)
+
+.         ren v1 state
+
+.         drop v5
+
+.         gsort -ratio
+
+.         gen rank=_n
+
+.         gen p=rank/37
+
+.         
+.         export excel using ../inference/rmspe_bmprate, firstrow(variables) rep
+> lace
+file ../inference/rmspe_bmprate.xls saved
+
+. 
+.         import excel ../inference/rmspe_bmprate.xls, sheet("Sheet1") firstrow 
+> clear
+(6 vars, 39 obs)
+
+.         histogram ratio, bin(20) frequency fcolor(gs13) lcolor(black) ylabel(0
+> (2)12) xtitle(Post/pre RMSPE ratio) xlabel(0(1)25)
+(bin=20, start=.29444915, width=.45903314)
+
+. 
 end of do-file
-
-r(110);
 
 . do "/var/folders/st/xzrptnmx0lb7r93b976p0jc40000gn/T//SD00614.000000"
 
-. *  post-pre RMSPE       
-. set more off
+. * use "list" to see the lists
+. * Show the post/pre RMSPE ratio for all states, generate the histogram.
+. list rank p if state==39
 
-. local statelist  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 2
-> 4 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39
+     +------------------+
+     | rank           p |
+     |------------------|
+ 36. |   36   .97297299 |
+     +------------------+
 
 . 
-. foreach i of local statelist {
-  2.         use ../data/synth/synth_gap_bmprate`i', clear
-  3.         
-.         gen gap39=gap`i'*gap`i'
-  4.         egen postmean=mean(gap3) if year>1988
-  5.         egen premean=mean(gap3) if year<=1988
-  6.         gen rmspe=sqrt(premean) if year<=1988
-  7.         replace rmspe=sqrt(postmean) if year>1988
-  8.         gen ratio=rmspe/rmspe[_n-1] if year==1989
-  9.         gen rmspe_post=sqrt(postmean) if year>1989
- 10.         gen rmspe_pre=rmspe[_n-1] if year==1989
- 11.         
-.         mkmat rmspe_pre rmspe_post ratio if year==1989, matrix (state`i')
- 12.                                                                 }
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(31 missing values generated)
-(0 real changes made)
-(31 missing values generated)
-(31 missing values generated)
-(31 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-(19 missing values generated)
-(12 missing values generated)
-(12 missing values generated)
-(12 real changes made)
-(30 missing values generated)
-(20 missing values generated)
-(30 missing values generated)
-(Tobacco Sales in 39 US States)
-gap3 ambiguous abbreviation
-r(111);
-
 end of do-file
 
-r(111);
+. do "/var/folders/st/xzrptnmx0lb7r93b976p0jc40000gn/T//SD00614.000000"
+
+. list rank p if state==3
+
+     +------------------+
+     | rank           p |
+     |------------------|
+  1. |    1   .02702703 |
+     +------------------+
+
+. 
+end of do-file
+
+. do "/var/folders/st/xzrptnmx0lb7r93b976p0jc40000gn/T//SD00614.000000"
+
+. 
+. * Inference 3: all the placeboes on the same picture
+. use ../data/synth/placebo_bmprate.dta, replace
+(Tobacco Sales in 39 US States)
+
+. 
+end of do-file
+
+. do "/var/folders/st/xzrptnmx0lb7r93b976p0jc40000gn/T//SD00614.000000"
+
+. 
+. * Picture of the full sample, including outlier RSMPE
+. #delimit;       
+delimiter now ;
+. twoway 
+> (line gap1 year ,lp(solid)lw(vthin)) 
+> (line gap2 year ,lp(solid)lw(vthin)) 
+> (line gap4 year ,lp(solid)lw(vthin)) 
+> (line gap5 year ,lp(solid)lw(vthin))
+> (line gap6 year ,lp(solid)lw(vthin)) 
+> (line gap8 year ,lp(solid)lw(vthin)) 
+> (line gap9 year ,lp(solid)lw(vthin)) 
+> (line gap10 year ,lp(solid)lw(vthin)) 
+> (line gap11 year ,lp(solid)lw(vthin)) 
+> (line gap12 year ,lp(solid)lw(vthin)) 
+> (line gap13 year ,lp(solid)lw(vthin)) 
+> (line gap15 year ,lp(solid)lw(vthin)) 
+> (line gap16 year ,lp(solid)lw(vthin)) 
+> (line gap17 year ,lp(solid)lw(vthin))
+> (line gap18 year ,lp(solid)lw(vthin)) 
+> (line gap20 year ,lp(solid)lw(vthin)) 
+> (line gap21 year ,lp(solid)lw(vthin)) 
+> (line gap22 year ,lp(solid)lw(vthin)) 
+> (line gap23 year ,lp(solid)lw(vthin)) 
+> (line gap24 year ,lp(solid)lw(vthin)) 
+> (line gap25 year ,lp(solid)lw(vthin)) 
+> (line gap26 year ,lp(solid)lw(vthin))
+> (line gap27 year ,lp(solid)lw(vthin))
+> (line gap28 year ,lp(solid)lw(vthin)) 
+> (line gap29 year ,lp(solid)lw(vthin)) 
+> (line gap30 year ,lp(solid)lw(vthin)) 
+> (line gap31 year ,lp(solid)lw(vthin)) 
+> (line gap32 year ,lp(solid)lw(vthin)) 
+> (line gap33 year ,lp(solid)lw(vthin)) 
+> (line gap34 year ,lp(solid)lw(vthin))
+> (line gap35 year ,lp(solid)lw(vthin))
+> (line gap36 year ,lp(solid)lw(vthin))
+> (line gap37 year ,lp(solid)lw(vthin)) 
+> (line gap38 year ,lp(solid)lw(vthin)) 
+> (line gap39 year ,lp(solid)lw(vthin))
+> 
+> (line gap39 year ,lp(solid)lw(thick)lcolor(black)), /*treatment unit, Texas*/
+> yline(0, lpattern(shortdash) lcolor(black)) xline(1988, lpattern(shortdash) lc
+> olor(black))
+> xtitle("",si(small)) xlabel(#10) ytitle("Gap in cigsales per capita prediction
+>  error", size(small))
+>         legend(off);
+
+. #delimit cr
+delimiter now cr
+. 
+. graph save Graph ../figures/synth_placebo_bmprate.gph, replace
+(file ../figures/synth_placebo_bmprate.gph saved)
+
+. 
+end of do-file
+
+. do "/var/folders/st/xzrptnmx0lb7r93b976p0jc40000gn/T//SD00614.000000"
+
+. * Picture of the full sample, including outlier RSMPE
+. #delimit;       
+delimiter now ;
+. twoway 
+> (line gap1 year ,lp(solid)lw(vthin)) 
+> (line gap2 year ,lp(solid)lw(vthin)) 
+> (line gap3 year ,lp(solid)lw(vthin)) 
+> (line gap4 year ,lp(solid)lw(vthin)) 
+> (line gap5 year ,lp(solid)lw(vthin))
+> (line gap6 year ,lp(solid)lw(vthin)) 
+> (line gap7 year ,lp(solid)lw(vthin)) 
+> (line gap8 year ,lp(solid)lw(vthin)) 
+> (line gap9 year ,lp(solid)lw(vthin)) 
+> (line gap10 year ,lp(solid)lw(vthin)) 
+> (line gap11 year ,lp(solid)lw(vthin)) 
+> (line gap12 year ,lp(solid)lw(vthin)) 
+> (line gap13 year ,lp(solid)lw(vthin)) 
+> (line gap14 year ,lp(solid)lw(vthin)) 
+> (line gap15 year ,lp(solid)lw(vthin)) 
+> (line gap16 year ,lp(solid)lw(vthin)) 
+> (line gap17 year ,lp(solid)lw(vthin))
+> (line gap18 year ,lp(solid)lw(vthin)) 
+> (line gap19 year ,lp(solid)lw(vthin)) 
+> (line gap20 year ,lp(solid)lw(vthin)) 
+> (line gap21 year ,lp(solid)lw(vthin)) 
+> (line gap22 year ,lp(solid)lw(vthin)) 
+> (line gap23 year ,lp(solid)lw(vthin)) 
+> (line gap24 year ,lp(solid)lw(vthin)) 
+> (line gap25 year ,lp(solid)lw(vthin)) 
+> (line gap26 year ,lp(solid)lw(vthin))
+> (line gap27 year ,lp(solid)lw(vthin))
+> (line gap28 year ,lp(solid)lw(vthin)) 
+> (line gap29 year ,lp(solid)lw(vthin)) 
+> (line gap30 year ,lp(solid)lw(vthin)) 
+> (line gap31 year ,lp(solid)lw(vthin)) 
+> (line gap32 year ,lp(solid)lw(vthin)) 
+> (line gap33 year ,lp(solid)lw(vthin)) 
+> (line gap34 year ,lp(solid)lw(vthin))
+> (line gap35 year ,lp(solid)lw(vthin))
+> (line gap36 year ,lp(solid)lw(vthin))
+> (line gap37 year ,lp(solid)lw(vthin)) 
+> (line gap38 year ,lp(solid)lw(vthin)) 
+> (line gap39 year ,lp(solid)lw(vthin))
+> 
+> (line gap39 year ,lp(solid)lw(thick)lcolor(black)), /*treatment unit, Texas*/
+> yline(0, lpattern(shortdash) lcolor(black)) xline(1988, lpattern(shortdash) lc
+> olor(black))
+> xtitle("",si(small)) xlabel(#10) ytitle("Gap in cigsales per capita prediction
+>  error", size(small))
+>         legend(off);
+
+. #delimit cr
+delimiter now cr
+. 
+. graph save Graph ../figures/synth_placebo_bmprate.gph, replace
+(file ../figures/synth_placebo_bmprate.gph saved)
+
+. 
+end of do-file
+
+. do "/var/folders/st/xzrptnmx0lb7r93b976p0jc40000gn/T//SD00614.000000"
+
+. * Picture of the full sample, including outlier RSMPE
+. #delimit;       
+delimiter now ;
+. twoway 
+> (line gap1 year ,lp(solid)lw(vthin)) 
+> (line gap2 year ,lp(solid)lw(vthin)) 
+> (line gap3 year ,lp(solid)lw(vthin)) 
+> (line gap4 year ,lp(solid)lw(vthin)) 
+> (line gap5 year ,lp(solid)lw(vthin))
+> (line gap6 year ,lp(solid)lw(vthin)) 
+> (line gap7 year ,lp(solid)lw(vthin)) 
+> (line gap8 year ,lp(solid)lw(vthin)) 
+> (line gap9 year ,lp(solid)lw(vthin)) 
+> (line gap10 year ,lp(solid)lw(vthin)) 
+> (line gap11 year ,lp(solid)lw(vthin)) 
+> (line gap12 year ,lp(solid)lw(vthin)) 
+> (line gap13 year ,lp(solid)lw(vthin)) 
+> (line gap14 year ,lp(solid)lw(vthin)) 
+> (line gap15 year ,lp(solid)lw(vthin)) 
+> (line gap16 year ,lp(solid)lw(vthin)) 
+> (line gap17 year ,lp(solid)lw(vthin))
+> (line gap18 year ,lp(solid)lw(vthin)) 
+> (line gap19 year ,lp(solid)lw(vthin)) 
+> (line gap20 year ,lp(solid)lw(vthin)) 
+> (line gap21 year ,lp(solid)lw(vthin)) 
+> (line gap22 year ,lp(solid)lw(vthin)) 
+> (line gap23 year ,lp(solid)lw(vthin)) 
+> (line gap24 year ,lp(solid)lw(vthin)) 
+> (line gap25 year ,lp(solid)lw(vthin)) 
+> (line gap26 year ,lp(solid)lw(vthin))
+> (line gap27 year ,lp(solid)lw(vthin))
+> (line gap28 year ,lp(solid)lw(vthin)) 
+> (line gap29 year ,lp(solid)lw(vthin)) 
+> (line gap30 year ,lp(solid)lw(vthin)) 
+> (line gap31 year ,lp(solid)lw(vthin)) 
+> (line gap32 year ,lp(solid)lw(vthin)) 
+> (line gap33 year ,lp(solid)lw(vthin)) 
+> (line gap34 year ,lp(solid)lw(vthin))
+> (line gap35 year ,lp(solid)lw(vthin))
+> (line gap36 year ,lp(solid)lw(vthin))
+> (line gap37 year ,lp(solid)lw(vthin)) 
+> (line gap38 year ,lp(solid)lw(vthin)) 
+> (line gap39 year ,lp(solid)lw(vthin))
+> 
+> (line gap39 year ,lp(solid)lw(thick)lcolor(black)), /*treatment unit, Texas*/
+> yline(0, lpattern(shortdash) lcolor(black)) xline(1988, lpattern(shortdash) lc
+> olor(black))
+> xtitle("",si(small)) xlabel(#10) ytitle("Gap in cigsales per capita prediction
+>  error", size(small))
+>         legend(off);
+
+. #delimit cr
+delimiter now cr
+. 
+. graph save Graph ../figures/synth_placebo_bmprate.gph, replace
+(file ../figures/synth_placebo_bmprate.gph saved)
+
+. 
+end of do-file
+
+. do "/var/folders/st/xzrptnmx0lb7r93b976p0jc40000gn/T//SD00614.000000"
+
+. * Picture of the full sample, including outlier RSMPE
+. #delimit;       
+delimiter now ;
+. twoway 
+> (line gap1 year ,lp(solid)lw(vthin)) 
+> (line gap2 year ,lp(solid)lw(vthin)) 
+> (line gap3 year ,lp(solid)lw(vthin)) 
+> (line gap4 year ,lp(solid)lw(vthin)) 
+> (line gap5 year ,lp(solid)lw(vthin))
+> (line gap6 year ,lp(solid)lw(vthin)) 
+> (line gap7 year ,lp(solid)lw(vthin)) 
+> (line gap8 year ,lp(solid)lw(vthin)) 
+> (line gap9 year ,lp(solid)lw(vthin)) 
+> (line gap10 year ,lp(solid)lw(vthin)) 
+> (line gap11 year ,lp(solid)lw(vthin)) 
+> (line gap12 year ,lp(solid)lw(vthin)) 
+> (line gap13 year ,lp(solid)lw(vthin)) 
+> (line gap14 year ,lp(solid)lw(vthin)) 
+> (line gap15 year ,lp(solid)lw(vthin)) 
+> (line gap16 year ,lp(solid)lw(vthin)) 
+> (line gap17 year ,lp(solid)lw(vthin))
+> (line gap18 year ,lp(solid)lw(vthin)) 
+> (line gap19 year ,lp(solid)lw(vthin)) 
+> (line gap20 year ,lp(solid)lw(vthin)) 
+> (line gap21 year ,lp(solid)lw(vthin)) 
+> (line gap22 year ,lp(solid)lw(vthin)) 
+> (line gap23 year ,lp(solid)lw(vthin)) 
+> (line gap24 year ,lp(solid)lw(vthin)) 
+> (line gap25 year ,lp(solid)lw(vthin)) 
+> (line gap26 year ,lp(solid)lw(vthin))
+> (line gap27 year ,lp(solid)lw(vthin))
+> (line gap28 year ,lp(solid)lw(vthin)) 
+> (line gap29 year ,lp(solid)lw(vthin)) 
+> (line gap30 year ,lp(solid)lw(vthin)) 
+> (line gap31 year ,lp(solid)lw(vthin)) 
+> (line gap32 year ,lp(solid)lw(vthin)) 
+> (line gap33 year ,lp(solid)lw(vthin)) 
+> (line gap34 year ,lp(solid)lw(vthin))
+> (line gap35 year ,lp(solid)lw(vthin))
+> (line gap36 year ,lp(solid)lw(vthin))
+> (line gap37 year ,lp(solid)lw(vthin)) 
+> (line gap38 year ,lp(solid)lw(vthin)) 
+> (line gap39 year ,lp(solid)lw(vthin))
+> 
+> (line gap39 year ,lp(solid)lw(thick)lcolor(black)), /*treatment unit, Texas*/
+> yline(0, lpattern(shortdash) lcolor(black)) xline(1988, lpattern(shortdash) lc
+> olor(black))
+> xtitle("",si(small)) xlabel(#10) ytitle("Gap in cigsales per capita prediction
+>  error", size(small))
+>         legend(off);
+
+. #delimit cr
+delimiter now cr
+. 
+. graph save Graph ../figures/synth_placebo_bmprate.gph, replace
+(file ../figures/synth_placebo_bmprate.gph saved)
+
+. 
+end of do-file
 
