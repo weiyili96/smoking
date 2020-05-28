@@ -44,10 +44,10 @@ drop if _time==.
 rename _time year
 rename _Y_treated  treat
 rename _Y_synthetic counterfact
-gen gap48=treat-counterfact
+gen gap39=treat-counterfact
 sort year 
-twoway (line gap48 year,lp(solid)lw(vthin)lcolor(black)), yline(0, lpattern(shortdash) lcolor(black)) xline(1993, lpattern(shortdash) lcolor(black)) xtitle("",si(medsmall)) xlabel(#10) ytitle("Gap in black male prisoner prediction error", size(medsmall)) legend(off)
-save ../data/synth/synth_bmprate_48.dta, replace
+twoway (line gap39 year,lp(solid)lw(vthin)lcolor(black)), yline(0, lpattern(shortdash) lcolor(black)) xline(1988, lpattern(shortdash) lcolor(black)) xtitle("",si(medsmall)) xlabel(#10) ytitle("Gap in  prediction error", size(medsmall)) legend(off)
+save ../data/synth/synth_bmprate_39.dta, replace
 
 
 * Inference 1 placebo test
@@ -77,7 +77,7 @@ synth 	cigsale
 
 
  #delimit cr
-local statelist  1 2 4 5 6 8 9 10 11 12 13 15 16 17 18 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 45 46 47 48 49 51 53 55
+local statelist  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39
 
  foreach i of local statelist {
  	use ../data/synth/synth_bmprate_`i' ,clear
@@ -91,9 +91,9 @@ local statelist  1 2 4 5 6 8 9 10 11 12 13 15 16 17 18 20 21 22 23 24 25 26 27 2
  	save ../data/synth/synth_gap_bmprate`i', replace
 }
 
-use ../data/synth/synth_gap_bmprate48.dta, clear
+use ../data/synth/synth_gap_bmprate39.dta, clear
 sort year
-save ../data/synth/placebo_bmprate48.dta, replace
+save ../data/synth/placebo_bmprate39.dta, replace
 
 foreach i of local statelist {
 		
@@ -107,21 +107,21 @@ foreach i of local statelist {
 ** Inference 2: Estimate the pre- and post-RMSPE and calculate the ratio of the
 *  post-pre RMSPE	
 set more off
-local statelist  1 2 4 5 6 8 9 10 11 12 13 15 16 17 18 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 45 46 47 48 49 51 53 55
+local statelist  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39
 
 foreach i of local statelist {
 	use ../data/synth/synth_gap_bmprate`i', clear
 	
 	gen gap3=gap`i'*gap`i'
-	egen postmean=mean(gap3) if year>1993
-	egen premean=mean(gap3) if year<=1993
-	gen rmspe=sqrt(premean) if year<=1993
-	replace rmspe=sqrt(postmean) if year>1993
-	gen ratio=rmspe/rmspe[_n-1] if year==1994
-	gen rmspe_post=sqrt(postmean) if year>1993
-	gen rmspe_pre=rmspe[_n-1] if year==1994
+	egen postmean=mean(gap3) if year>1988
+	egen premean=mean(gap3) if year<=1988
+	gen rmspe=sqrt(premean) if year<=1988
+	replace rmspe=sqrt(postmean) if year>1988
+	gen ratio=rmspe/rmspe[_n-1] if year==1989
+	gen rmspe_post=sqrt(postmean) if year>1989
+	gen rmspe_pre=rmspe[_n-1] if year==1989
 	
-	mkmat rmspe_pre rmspe_post ratio if year==1994, matrix (state`i')
+	mkmat rmspe_pre rmspe_post ratio if year==1989, matrix (state`i')
 								}
 
 * show post/pre-expansion RMSPE ratio for all states, generate histogram
@@ -139,7 +139,7 @@ ssc install mat2txt, replace
 	drop v5
 	gsort -ratio
 	gen rank=_n
-	gen p=rank/46
+	gen p=rank/37
 	
 	export excel using ../inference/rmspe_bmprate, firstrow(variables) replace
 
@@ -148,7 +148,7 @@ ssc install mat2txt, replace
 
 * use "list" to see the lists
 * Show the post/pre RMSPE ratio for all states, generate the histogram.
-list rank p if state==48
+list rank p if state==39
 
 
 * Inference 3: all the placeboes on the same picture
@@ -193,24 +193,15 @@ twoway
 (line gap37 year ,lp(solid)lw(vthin)) 
 (line gap38 year ,lp(solid)lw(vthin)) 
 (line gap39 year ,lp(solid)lw(vthin))
-(line gap40 year ,lp(solid)lw(vthin)) 
-(line gap41 year ,lp(solid)lw(vthin)) 
-(line gap42 year ,lp(solid)lw(vthin)) 
-(line gap45 year ,lp(solid)lw(vthin)) 
-(line gap46 year ,lp(solid)lw(vthin)) 
-(line gap47 year ,lp(solid)lw(vthin))
-(line gap49 year ,lp(solid)lw(vthin)) 
-(line gap51 year ,lp(solid)lw(vthin)) 
-(line gap53 year ,lp(solid)lw(vthin)) 
-(line gap55 year ,lp(solid)lw(vthin)) 
-(line gap48 year ,lp(solid)lw(thick)lcolor(black)), /*treatment unit, Texas*/
-yline(0, lpattern(shortdash) lcolor(black)) xline(1993, lpattern(shortdash) lcolor(black))
-xtitle("",si(small)) xlabel(#10) ytitle("Gap in black male prisoners per capita prediction error", size(small))
+
+(line gap39 year ,lp(solid)lw(thick)lcolor(black)), /*treatment unit, Texas*/
+yline(0, lpattern(shortdash) lcolor(black)) xline(1988, lpattern(shortdash) lcolor(black))
+xtitle("",si(small)) xlabel(#10) ytitle("Gap in cigsales per capita prediction error", size(small))
 	legend(off);
 
 #delimit cr
 
-graph save Graph ../Figures/synth_placebo_bmprate.gph, replace
+graph save Graph ../figures/synth_placebo_bmprate.gph, replace
 
 * Drop the outliers (RMSPE is 5 times more than Texas: drops 11, 28, 32, 33, and 41)
 * Picture of the full sample, including outlier RSMPE
@@ -248,23 +239,15 @@ twoway
 (line gap37 year ,lp(solid)lw(vthin)) 
 (line gap38 year ,lp(solid)lw(vthin)) 
 (line gap39 year ,lp(solid)lw(vthin))
-(line gap40 year ,lp(solid)lw(vthin)) 
-(line gap42 year ,lp(solid)lw(vthin)) 
-(line gap45 year ,lp(solid)lw(vthin)) 
-(line gap46 year ,lp(solid)lw(vthin)) 
-(line gap47 year ,lp(solid)lw(vthin))
-(line gap49 year ,lp(solid)lw(vthin)) 
-(line gap51 year ,lp(solid)lw(vthin)) 
-(line gap53 year ,lp(solid)lw(vthin)) 
-(line gap55 year ,lp(solid)lw(vthin)) 
-(line gap48 year ,lp(solid)lw(thick)lcolor(black)), /*treatment unit, Texas*/
+
+(line gap39 year ,lp(solid)lw(thick)lcolor(black)), /*treatment unit, Texas*/
 yline(0, lpattern(shortdash) lcolor(black)) xline(1993, lpattern(shortdash) lcolor(black))
-xtitle("",si(small)) xlabel(#10) ytitle("Gap in black male prisoners per capita prediction error", size(small))
+xtitle("",si(small)) xlabel(#10) ytitle("Gap in cigsales per capita prediction error", size(small))
 	legend(off);
 
 #delimit cr
 
-graph save Graph ../Figures/synth_placebo_bmprate2.gph, replace
+graph save Graph ../figures/synth_placebo_bmprate2.gph, replace
 
 
 
@@ -276,7 +259,7 @@ twoway
 (line gap17 year ,lp(solid)lw(vthin))
 (line gap48 year ,lp(solid)lw(thick)lcolor(black)), /*treatment unit, Texas*/
 yline(0, lpattern(shortdash) lcolor(black)) xline(1993, lpattern(shortdash) lcolor(black))
-xtitle("",si(small)) xlabel(#10) ytitle("Gap in black male prisoners per capita prediction error", size(small))
+xtitle("",si(small)) xlabel(#10) ytitle("Gap in cigsales per capita prediction error", size(small))
 	legend(off);
 
 #delimit cr
