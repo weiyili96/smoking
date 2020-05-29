@@ -260,13 +260,13 @@ graph save Graph ../figures/synth_placebo_bmprate2.gph, replace
 
 
 
-* Just compare Illinois with Texas
+* Just compare Illinois with California
 
 #delimit;	
 
 twoway 
 (line gap17 year ,lp(solid)lw(vthin))
-(line gap39 year ,lp(solid)lw(thick)lcolor(black)), /*treatment unit, Texas*/
+(line gap3 year ,lp(solid)lw(thick)lcolor(black)), /*treatment unit, Texas*/
 yline(0, lpattern(shortdash) lcolor(black)) xline(1993, lpattern(shortdash) lcolor(black))
 xtitle("",si(small)) xlabel(#10) ytitle("Gap in cigsales per capita prediction error", size(small))
 	legend(off);
